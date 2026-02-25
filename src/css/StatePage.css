@@ -1,0 +1,97 @@
+/* Full background hero */
+.state-hero {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Dark overlay */
+.state-overlay {
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.75); /* darker overlay */
+  padding: 80px 60px;
+  text-align: center;
+  color: white;
+}
+
+/* Heading */
+.state-overlay h1 {
+  margin-bottom: 50px;
+  font-size: 44px;
+  font-weight: 700;
+  color: #ffffff; /* pure white */
+  text-shadow:
+    0 0 10px rgba(0,0,0,0.9),
+    0 0 20px rgba(0,0,0,0.8),
+    2px 4px 18px rgba(0,0,0,0.95);
+}
+
+/* Grid layout */
+.places-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 40px;
+  margin-top: 40px;
+}
+
+/* Card */
+.place-card {
+  background: white;
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+  transition: 0.3s ease;
+}
+
+.place-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Image FIX (no zoom distortion) */
+.place-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;   /* 🔥 prevents zoom */
+  border-radius: 14px;
+  background: #f3f4f6;
+  padding: 10px;
+}
+
+/* Place name */
+.place-card h3 {
+  margin-top: 15px;
+  color: #111827;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Homestay button */
+.homestay-btn {
+  margin-top: 12px;
+  padding: 8px 14px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.homestay-btn:hover {
+  background: #1e40af;
+}
+
+/* Back button */
+.back-btn {
+  background: white;
+  color: #2563eb;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  font-weight: 600;
+}

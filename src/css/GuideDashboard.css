@@ -1,0 +1,71 @@
+/* ================= MAIN WRAPPER ================= */
+
+.guide-dashboard {
+  max-width: 1150px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+  color: #111827;   /* 🔥 DARK TEXT */
+}
+
+/* ================= HEADER ================= */
+
+.guide-dashboard h1 {
+  font-size: 2.2rem;
+  color: #111827;
+}
+
+.guide-dashboard p {
+  color: #6b7280;
+}
+
+/* ================= STATS CARDS ================= */
+
+.dashboard-card {
+  background: #ffffff;   /* clean white card */
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+  transition: 0.3s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+}
+
+.dashboard-card h3 {
+  color: #2563eb;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.dashboard-card p {
+  color: #6b7280;
+}
+
+/* ================= BUTTONS ================= */
+
+.btn-primary {
+  background: #2563eb;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: #1d4ed8;
+}
+
+.btn-danger {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-danger:hover {
+  background: #dc2626;
+}

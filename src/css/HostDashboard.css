@@ -1,0 +1,49 @@
+.host-container {
+  max-width: 1150px;
+  margin: 2rem auto;
+  padding: 0 1.5rem 3rem 1.5rem;
+  color: #111827;   /* dark text */
+}
+
+.stats-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.stat-card {
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(14px);
+  padding: 1.5rem;
+  border-radius: 16px;
+  text-align: center;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.card-section {
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(14px);
+  padding: 2rem;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.primary-btn {
+  background: linear-gradient(90deg, #6366f1, #9333ea);
+  color: white;
+  padding: 12px 22px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  transform: scale(1.05);
+}
+
+/* FIX RANDOM BLUE BACKGROUNDS */
+
+button {
+  border: none;
+}
