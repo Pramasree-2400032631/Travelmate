@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { useAuth } from "../context/AuthContext.jsx";
 import "../css/GuideDashboard.css";
+import travelImg from "../assets/images/travel.jpg";
 /**
  * GuideDashboard — feature rich guide portal.
  *
@@ -286,8 +287,13 @@ export default function GuideDashboard() {
   });
 
   // ---- Render ----
-  return (
-  <main className="guide-dashboard">
+return (
+  <div
+    className="guide-dashboard-bg"
+    style={{ backgroundImage: `url(${travelImg})` }}
+  >
+    <div className="guide-dashboard-overlay">
+      <main className="guide-dashboard">
       <header className="guide-header">
         <div>
           <h1 style={{ margin: 0 }}>Host / Guide Dashboard</h1>
@@ -562,8 +568,10 @@ export default function GuideDashboard() {
             </aside>
           </div>
         </section>
-      )}
-    </main>
+            )}
+      </main>
+    </div>
+  </div>
   );
 
   // helper - create sample booking for a tour (demo)
@@ -651,6 +659,7 @@ export default function GuideDashboard() {
     reader.readAsText(file);
   }
 }
+
 
 // small reply box component for messages
 function ReplyBox({ message, onReply }) {
