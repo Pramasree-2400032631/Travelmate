@@ -3,11 +3,11 @@ const stateData = {
   "Andhra Pradesh": {
     hero: "https://images.unsplash.com/photo-1587474260584-136574528ed5",
     places: [
-      { name: "Araku Valley", img: "https://images.unsplash.com/photo-1626258381403-6cba0b4dba88" },
-      { name: "Tirupati", img: "https://images.unsplash.com/photo-1610262416748-6d0df2ff5b0a" },
-      { name: "Visakhapatnam", img: "https://images.unsplash.com/photo-1603186344442-e2e7b92a16f8" },
-      { name: "Lepakshi", img: "https://images.unsplash.com/photo-1629974583738-9e2f5b7a2a5d" },
-      { name: "Vijayawada", img: "https://images.unsplash.com/photo-1583241800698-0b8c3c6d5327" }
+      { name: "Araku Valley", img: "https://luxoticholidays.com/blog/wp-content/uploads/2025/02/visakhapatnam-araku-valley.jpg" },
+      { name: "Tirupati", img: "https://cdn.britannica.com/22/156222-050-BEE18768/Sri-Venkateswara-Swamy-Temple-Tirumala-Tirupati-India.jpg" },
+      { name: "Visakhapatnam", img: "https://vizagtourism.org.in/images/places-to-visit/header/ins-kurusura-submarine-museum-vizag-tourism-entry-fee-timings-holidays-reviews-header.jpg" },
+      { name: "Lepakshi", img: "https://static.toiimg.com/thumb/51598992/Lepakshi.jpg?width=1200&height=900" },
+      { name: "Vijayawada", img: "https://www.indiantempletour.com/wp-content/uploads/2023/03/Vijayawada-Tour.jpeg" }
     ]
   },
 

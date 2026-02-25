@@ -1,13 +1,66 @@
+/* ================= GLOBAL ================= */
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #f3f4f6;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8%;
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.logo-highlight {
+  color: #2563eb;
+}
+
+.nav-buttons button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 8px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.nav-buttons button:hover {
+  background: #1d4ed8;
+}
+
+/* ================= SPLIT LAYOUT ================= */
+
 .auth-container {
   display: flex;
   height: calc(100vh - 80px);
+  width: 100%;
 }
+
+/* ================= LEFT IMAGE ================= */
 
 .auth-left {
   flex: 1;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
+
+/* ================= RIGHT SIDE ================= */
 
 .auth-right {
   flex: 1;
@@ -17,51 +70,82 @@
   background: #f3f4f6;
 }
 
+/* ================= CARD ================= */
+
 .auth-card {
-  width: 400px;
-  padding: 40px;
+  width: 420px;
+  padding: 50px;
   background: white;
-  border-radius: 20px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  border-radius: 28px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.08);
+  text-align: center;
 }
 
 .auth-card h2 {
-  text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
+  font-size: 30px;
+  font-weight: 700;
   color: #111827;
 }
+
+/* ================= INPUTS ================= */
 
 .auth-card input,
 .auth-card select {
   width: 100%;
-  padding: 12px;
+  padding: 14px;
   margin-bottom: 18px;
-  border-radius: 10px;
+  border-radius: 14px;
   border: 1px solid #d1d5db;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s ease;
 }
 
 .auth-card input:focus,
 .auth-card select:focus {
   border-color: #2563eb;
-  outline: none;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
 }
+
+/* ================= BUTTON ================= */
 
 .auth-btn-main {
   width: 100%;
-  padding: 12px;
-  border-radius: 12px;
+  padding: 14px;
+  border-radius: 16px;
   border: none;
   background: #2563eb;
   color: white;
   font-weight: 600;
+  font-size: 15px;
   cursor: pointer;
+  transition: 0.3s ease;
 }
 
 .auth-btn-main:hover {
   background: #1e40af;
+  transform: translateY(-2px);
 }
+
+/* ================= ERROR ================= */
 
 .error {
   color: #ef4444;
   font-size: 13px;
+  margin-top: -10px;
+  margin-bottom: 12px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+  .auth-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .auth-left {
+    height: 300px;
+  }
 }
